@@ -47,6 +47,44 @@ body {
 .publication-header .hero-body {
 }
 
+/* Target the specific header with the custom class */
+header.hero.is-primary.custom-header {
+  /* Your custom styles here */
+  background-color: #002147; /* Set your desired background color */
+  overflow: hidden; /* Disable overflow */
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.header-image-container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #002147; /* Set your desired background color */
+  padding-left:     40px; /* Add padding as needed */
+  padding-right:    40px; /* Add padding as needed */
+  padding-top:      35px; /* Add padding as needed */
+  padding-bottom:   30px; /* Add padding as needed */
+  overflow: hidden; /* Disable overflow */
+  /* width: 100%; */
+}
+
+.header-image {
+  /* Adjust the styles as needed */
+  width: fit-content;/* Make sure the image spans the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper display as a block-level element */
+}
+
+/* Adjust image dimensions for larger screens */
+@media (min-width: 500px) {
+  .header-image-container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px; /* Adjust the max-width for larger screens */
+      /* max-height: 200px; */
+  }
+}
+
 .publication-title {
     font-family: 'Google Sans', sans-serif;
 }
