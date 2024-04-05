@@ -215,7 +215,7 @@ tr:hover {
 
 .project-description-cell {
   padding: 0pt 20pt !important;
-  display:table-cell;
+  display:table-cell !important;
   vertical-align: middle !important;
 }
 
