@@ -8,19 +8,6 @@
   <meta name="viewport"     content="width=device-width, initial-scale=1">
   <title>CRG Github Pages Research Project Template</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -34,6 +21,7 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- The default icon is the EngSci favicon -->
   <link rel="icon" href="./static/images/favicon_crg.png">
+  <link rel="import" href="footer.html">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -44,56 +32,13 @@
 <body>
 
 
-<!-- Header section -->
-<header class="hero is-primary custom-header">
-  <div class="header-image-container">
-    <!-- Your header image -->
-    <img src="./static/images/crg_logo_inv.png" alt="Cognitive Robotics Group Logo" class="header-image">
-  </div>
-</header>
+<!-- Header (imported) -->
+<div data-include="header.html"></div>
 
-<!-- Navigation Menu -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="./index.html">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
+<!-- Navbar Menu (imported)-->
+<div data-include="navbar.html"></div>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">
-            CRG Website
-          </a>
-          <a class="navbar-item" href="https://github.com/cognitive-robots">
-            CRG Github
-          </a>
-          <a class="navbar-item" href="https://twitter.com/CognitiveRobots">
-            CRG Twitter
-          </a>
-          <!-- <a class="navbar-item" href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">
-            Your Link Here
-          </a> -->
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-
+<!-- Title -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -101,107 +46,9 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">CRG Github Pages Research Project Template</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">Author 1</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">Author 2</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">Author 3</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">Author 4</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">Author 5</a><sup>2</sup>,
-            </span>
-            <!-- <span class="author-block">
-              <a href="https://ori.ox.ac.uk/labs/cognitive-robotics-group">Additional Author</a><sup>1</sup>,
-            </span> -->
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Oxford Robotics Institute, University of Oxford</span>
+            <span class="author-block">Oxford Robotics Institute</span>
             <br>
-            <!-- <span class="author-block"><sup>1</sup>Oxford Robotics Institute, Dept. Engineering Science, University of Oxford, UK.</span> -->
-            <span class="author-block"><sup>2</sup>Collaborator (If Applicable)</span>
-          </div>
-          
-          <!-- Link Icons - Comment out where not required -->
-          <!-- For more icon options, see: https://www.w3schools.com/icons/fontawesome5_intro.asp -->
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Paper PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.14488"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- arXiv PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.14488"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://sciencecast.org/casts/9yrjbwh2o3it"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-video"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/cognitive-robots"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/cognitive-robots"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-database"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-              </span>
-              <!-- Poster -->
-              <span class="link-block">
-                <a href="https://github.com/cognitive-robots"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-image"></i>
-                  </span>
-                  <span>Poster</span>
-                  </a>
-              </span>
-              <!-- Slides -->
-              <span class="link-block">
-                <a href="https://github.com/cognitive-robots"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Slides</span>
-                  </a>
-              </span>
-            </div>
-
+            <span class="author-block">Dept. Engineering Science, University of Oxford, UK</span>
           </div>
         </div>
       </div>
@@ -209,81 +56,15 @@
   </div>
 </section>
 
-<!-- TODO - put a flashy image here -->
 
-<!-- <section class="hero teaser">
+<!-- Attention Grabbing Image -->
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
+    <div class="columns is-centered has-text-centered">
+      <img src="./static/images/hsr_block_stacking.png" alt="HSR Block Stacking Task." class="body-image"/>
     </div>
   </div>
-</section> -->
-
-
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -293,15 +74,58 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            First paragraph.
+            This is a very cool and interesting project that will change cognitive robotics forever.
           </p>
           <p>
-            Second paragraph.
+            Researchers from the Cognitive Robotics Group are working on this cool thing that you will love to hear about.
           </p>
         </div>
       </div>
     </div>
     <!--/ Overview. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Project Team. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Project Team</h2>
+        <div class="content has-text-justified">
+          <p>
+            The team is made up of a group of talented members, who know how to do the things very well. 
+          </p>
+
+          <table>
+            <tbody>
+                <tr>
+                  <td class="thumbnail-cell"><img src="./static/images/ricardo_thumbnail.jpg" alt="Person 1 Thumbnail" class="thumbnail-cell"></td>
+                  <td class="project-description-cell">
+                    <div class="project-description">
+                      <a href="https://ori.ox.ac.uk/people/ricardo-cannizzaro/">Ricardo Cannizzaro</a>
+                      <br><br>
+                      Person 1 Role.
+                   </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="thumbnail-cell"><img src="./static/images/lars_thumbnail.jpg" alt="Person 2 Thumbnail" class="thumbnail-cell"></td>
+                  <td class="project-description-cell">
+                    <div class="project-description">
+                      <a href="https://ori.ox.ac.uk/people/lars-kunze/">Lars Kunze</a>
+                      <br><br>
+                      Person 2 Role.
+                   </div>
+                  </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--/ Publications. -->
   </div>
 </section>
 
@@ -313,66 +137,72 @@
         <h2 class="title is-3">Publications</h2>
         <div class="content has-text-justified">
           <p>
-            First paragraph.
+            Below is a list of publications describing the research activities undertaken as part of the project. 
           </p>
-          <p>
-            Second paragraph.
-          </p>
-          <p>
-            TODO: put publications into a 2-column table with thumbnail image for papers in LH column, link to subpage in RH column.
-          </p>
-          <ul>
-            <li>
-              <a href="./publication1.html"><strong>Awesome Publication 1</strong></a>
-              <br> Ricardo Cannizzaro, Lars Kunze. IEEE/RSJ IROS 2023.
-              <!-- <br> [<a href="http://arxiv.org/abs/2304.06848">Paper</a>] -->
-            </li>
-            <li>
-              <a href="./publication2.html"><strong>Awesome Publication 2</strong></a>
-              <br> Ricardo Cannizzaro, Lars Kunze. IEEE/RSJ IROS 2023.
-              <!-- <br> [<a href="http://arxiv.org/abs/2304.06848">Paper</a>] -->
-            </li>
-            <!-- <li><strong>Towards Probabilistic Causal Discovery, Inference &amp; Explanations for Autonomous Drones in Mine Surveying Tasks</strong> <br> Ricardo Cannizzaro*, Rhys Howard*, Paulina Lewinska, Lars Kunze. IEEE/RSJ IROS 2023 Workshop on Causality for Robotics. <br> [<a href="https://arxiv.org/abs/2308.10047">Paper</a>]</li><li><strong>An Upper Confidence Bound for Simultaneous Exploration and Exploitation in Heterogeneous Multi-Robot Systems</strong> <br> Ki Myung Brian Lee, Felix Kong, Ricardo Cannizzaro, Jennifer L Palmer, David Johnson, Chanyeol Yoo, Robert Fitch. IEEE ICRA 2021. <br> [<a href="https://ieeexplore.ieee.org/document/9560822">Paper</a>]</li><li><strong>Decentralised Intelligence, Surveillance, and Reconnaissance in Unknown Environments with Heterogeneous Multi-Robot Systems</strong> <br> Ki Myung Brian Lee, Felix H Kong, Ricardo Cannizzaro, Jennifer L Palmer, David Johnson, Chanyeol Yoo, Robert Fitch. IEEE ICRA 2021 Workshop on Robot Swarms in the Real World: From Design to Deployment.<br> [<a href="https://arxiv.org/abs/2106.09219">Paper</a>]</li><li><strong>ColMap: A Memory-Efficient Occupancy Grid Mapping Framework</strong> <br> Alex Fisher, Ricardo Cannizzaro, Madeleine Cochrane, Chatura Nagahawatte, Jennifer L Palmer. Robotics and Autonomous Systems 2021. <br> [<a href="https://www.sciencedirect.com/science/article/pii/S0921889021000403">Paper</a>]</li><li><strong>Evaluation of LIDAR and X-Band Radar Sensors in a Particle-Dense Environment</strong> <br> Ricardo Cannizzaro, Meaghan G Smith, Alexander W Blain, Thomas Baum, Kelvin Nicholson, Jennifer L Palmer. AIAC18: 18th Australian International Aerospace Congress (2019): HUMS-11th Defence Science and Technology (DST) International Conference on Health and Usage Monitoring (HUMS 2019): ISSFD-27th International Symposium on Space Flight Dynamics (ISSFD) 2019. <br> [<a href="https://www.researchgate.net/publication/348620221_Evaluation_of_LIDAR_and_X-Band_Radar_Sensors_in_a_Particle-Dense_Environment">Paper</a>]</li><li><strong>Experimental Validation of a Random-Finite-Set-Based SLAM Algorithm for Micro UAS</strong> <br> Ricardo Cannizzaro, Madeleine Cochrane, Lance Fang, Jennifer L Palmer. Australasian Conference on Robotics and Automation (ACRA) 2019. <br> [<a href="https://ssl.linklings.net/conferences/acra/acra2019_proceedings/views/by_sub_type.html#pap105">Paper</a>]</li><li><strong>Data Ferrying with Swarming UAS in Tactical Defence Networks</strong> <br> Robert Hunjet, Bradley Fraser, Thomas Stevens, Laura Hodges, Karina Mayen, Jan Carlo Barca, Madeleine Cochrane, Ricardo Cannizzaro, Jennifer L Palmer. IEEE ICRA 2018. <br> [<a href="https://ieeexplore.ieee.org/document/8463151">Paper</a>]</li><li><strong>Source Localisation with a Bernoulli Particle-Filter-Based Bearings-Only Tracking Algorithm</strong> <br> Jennifer L Palmer, Ricardo Cannizzaro, Branko Ristic, Thomas Cheah, Chatura Nagahawatte, John Gilbert, Sanjeev Arulampalam. Australasian Conference on Robotics and Automation (ACRA) 2015. <br> [<a href="https://www.araa.asn.au/acra/acra2015/papers/pap170.pdf">Paper</a>]</li></ul> -->
+
+          <table>
+            <!-- <thead>
+                <tr>
+                    <th>Thumbnail</th>
+                    <th>Project Title</th>
+                </tr>
+            </thead> -->
+            <tbody>
+                <tr>
+                  <td class="thumbnail-cell"><img src="./static/images/placeholder_image.jpg" alt="Publication 1 Thumbnail" class="thumbnail-cell"></td>
+                  <td class="project-description-cell">
+                    <div class="project-description">
+                      <a href="./publication1.html">Publication 1: Title Here</a>
+                      <br><br>
+                      Ricardo Cannizzaro, Lars Kunze. IEEE/RSJ IROS 2023.
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="thumbnail-cell"><img src="./static/images/placeholder_image.jpg" alt="Publication 2 Thumbnail" class="thumbnail-cell"></td>
+                  <td class="project-description-cell">
+                    <div class="project-description">
+                      <p>
+                        <a href="./publication2.html">Publication 2: Title Here</a>
+                      </p>
+                      <p>
+                        Ricardo Cannizzaro, Lars Kunze. IEEE/RSJ IROS 2023.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="thumbnail-cell"><img src="./static/images/placeholder_image.jpg" alt="Publication 3 Thumbnail" class="thumbnail-cell"></td>
+                  <td class="project-description-cell">
+                    <div class="project-description">
+                      <p>
+                        <a href="./publication3.html">Publication 3: Title Here</a>
+                      </p>
+                      <p>
+                        Ricardo Cannizzaro, Lars Kunze. IEEE/RSJ IROS 2023.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-    <!--/ Overview. -->
+    <!--/ Publications. -->
   </div>
 </section>
-
-<!-- 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section> -->
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link" href="https://github.com/cognitive-robots" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website was adapted from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> website, which is licensed under a <a rel="license"
-            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
 </body>
+
+<!-- Footer (imported) -->
+<div data-include="footer.html"></div>
+
+
+<!-- Import content and replace attributes just before we close the html tag -->
+<script src="./static/js/includeHTML.js"></script>
+<script>
+    includeHTML();
+</script>
+
 </html>

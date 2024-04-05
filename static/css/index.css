@@ -2,7 +2,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-
 .footer .icon-link {
     font-size: 25px;
     color: #000;
@@ -192,4 +191,50 @@ header.hero.is-primary.custom-header {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+
+/* CSS for table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  outline: 1px solid #ddd;
+}
+th, td {
+  padding: 10px !important;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.project-description-cell {
+  padding: 0pt 20pt !important;
+  display:table-cell;
+  vertical-align: middle !important;
+}
+
+.project-description {
+  display:table-cell;
+}
+
+.thumbnail-cell {
+  width: 200px; /* Specify width of the first column */
+  display: table-cell;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.thumbnail {
+  width: auto; /* Maintain aspect ratio */
+  max-height: 100px; 
+}
+
+.body-image {
+  width: 65%;
 }
