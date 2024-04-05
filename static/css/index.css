@@ -215,7 +215,7 @@ tr:hover {
 
 .project-description-cell {
   padding: 0pt 20pt !important;
-  display:table-cell !important;
+  display:table-cell;
   vertical-align: middle !important;
 }
 
@@ -232,7 +232,7 @@ tr:hover {
 
 .thumbnail {
   width: auto; /* Maintain aspect ratio */
-  max-height: 100px; 
+  max-height: 100px !important; 
 }
 
 .body-image {
